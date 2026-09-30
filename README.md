@@ -28,13 +28,6 @@ Follow the phases in order.
 Going through the Notion page phase by phase, these pieces are referenced but **not yet a file
 in this repo** — say if you want them added the same way:
 
-- **Phase 2 — OpenCTI ⇄ Wazuh Indexer wiring**: enabling remote access on
-  `opensearch.yml` (`network.host`), creating the read-only `cti_connector` indexer user and the
-  `wazuh_cti_connector` role/mapping, and the `connector-wazuh` (+ `connector-alienvault`,
-  `connector-malwarebazaar`) Docker Compose blocks.
-- **MalwareBazaar connector** Docker Compose block (end of the Notion page).
-- Final restart command: `systemctl restart wazuh-manager wazuh-dashboard wazuh-indexer`.
-
 ## Known issues carried over from the Notion notes (not changed here — flagging only)
 
 - **Duplicate rule IDs**: 100611, 100612 and 100621 are defined in both
