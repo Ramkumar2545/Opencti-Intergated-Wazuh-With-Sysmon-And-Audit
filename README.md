@@ -3,9 +3,7 @@
 Step-by-step notes for wiring **OpenCTI** (threat intel) into **Wazuh** (SIEM), with Windows
 endpoints monitored through **Sysmon** and Linux endpoints monitored through **auditd**.
 
-This README is an index — each phase's real content lives in its own file in this repo (as
-pulled from the [Notion source page](https://app.notion.com/p/OPENCTI-FINAL-PHASE-2-INTERGATED-WAZUH-33a10ff258c480d7b411d816bc01ac79)).
-Follow the phases in order.
+
 
 ## Contents / step-by-step order
 
