@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright Ramkumar 2026, ITFORTRESS
+# Copyright Ramkumar 2026, C
 # Modified: improved IOC extraction + fixed hash/file/filename queries + fixed filename false-positive indicators
 # Additional fix: extract IPv4/IPv6, domains, and URLs from Linux auditd execve monitoring
 # Additional fix: extract SHA256/SHA1/MD5 embedded in filename (MalwareBazaar-style downloads)
