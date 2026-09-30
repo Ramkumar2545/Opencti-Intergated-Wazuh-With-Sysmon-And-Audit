@@ -21,25 +21,7 @@ endpoints monitored through **Sysmon** and Linux endpoints monitored through **a
 | 10 | [`local-rules.md`](local-rules.md) | `local_rules.xml` — OpenCTI base rules (100210–100216), Linux auditd targeted-binary rules (100499–100510), high-score escalation (100221–100222) |
 | 11 | [`ossec-conf.md`](ossec-conf.md) | The `<integration>` block for `ossec.conf` — group list, `api_key`, `hook_url` (two variants shown) |
 
-## What's still missing from this repo
 
-Going through the Notion page phase by phase, these pieces are referenced but **not yet a file
-in this repo** — say if you want them added the same way:
-
-## Known issues carried over from the Notion notes (not changed here — flagging only)
-
-- **Duplicate rule IDs**: 100611, 100612 and 100621 are defined in both
-  `ignore-rules-windows.md` and `linux-ignore.md` with different `<field>` matches. Loading both
-  files on the same Wazuh manager will make `wazuh-analysisd -t` fail on duplicate IDs — one side
-  needs renumbering before deployment.
-- **`opencti-custom.py`** expects the wrapper script from step 8 to be saved as
-  `/var/ossec/integrations/custom-opencti` (no extension) and the script itself as
-  `/var/ossec/integrations/custom-opencti.py`, both owned `root:wazuh`, mode `750`.
-- **`ossec-conf.md`** contains a live-looking OpenCTI API token in plain text
-  (`flgrn_octi_tkn_...`) — rotate it in OpenCTI before publishing/sharing this repo.
-- **`af_unix.conf`** in `linux-endpoints-auditd.md` (Step 4) — path differs between distros
-  (`/etc/audisp/plugins.d/` vs `/etc/audit/plugins.d/`); check which exists on your endpoint
-  before editing.
 
 ## Order of operations (quick view)
 
