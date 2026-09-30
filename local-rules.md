@@ -8,7 +8,7 @@
 <!-- ============================================================
      Wazuh Local Rules — OpenCTI Threat Intel Integration
      Covers: OpenCTI alerts + Linux auditd targeted binary monitoring
-     Author: Ramkumar 2026, ITFORTRESS
+     Author: Ramkumar 2026, C
      Fix v3: Rule 100499 — SYSCALL-only fallback (audit group, no execve)
              Catches ping/curl/wget etc. when Wazuh rule 80700 fires
              (SYSCALL-only, no EXECVE record correlated yet).
