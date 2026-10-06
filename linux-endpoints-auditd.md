@@ -138,6 +138,9 @@ Paste this:
 # Shells
 -a always,exit -F arch=b64 -S execve -F path=/bin/bash         -k command_monitor
 -a always,exit -F arch=b64 -S execve -F path=/bin/sh           -k command_monitor
+# File read
+-a always,exit -F arch=b64 -S execve -F path=/usr/bin/cat -k command_monitor
+-a always,exit -F arch=b64 -S execve -F path=/bin/cat     -k command_monitor
 ```
 
 Save and exit.
